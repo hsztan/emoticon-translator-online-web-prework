@@ -15,7 +15,6 @@ end
 
 def get_japanese_emoticon(path, en_emote)
   file = load_library(path)
-  binding.pry
   lib = YAML.load_file(path)
   jap_emote = file["get_emoticon"][en_emote]
 

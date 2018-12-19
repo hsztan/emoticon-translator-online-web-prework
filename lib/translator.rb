@@ -31,4 +31,4 @@ def get_english_meaning(path, jap_emote)
   en_meaning ? en_meaning : "Sorry, that emoticon was not found"
 end
 
-puts get_japanese_emoticon(path, "O:)")
+puts get_english_meaning(path, "(Ｔ▽Ｔ)")

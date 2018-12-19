@@ -22,6 +22,7 @@ end
 
 def get_english_meaning(path, jap_emote)
   file = load_library(path)
+  binding.pry
   #lib = YAML.load_file(path)
   #en_meaning = nil
   #lib.each {|k, a| en_meaning = k if jap_emote == a[1]}

@@ -15,6 +15,7 @@ end
 
 def get_japanese_emoticon(path, en_emote)
   file = load_library(path)
+  binding.pry
   lib = YAML.load_file(path)
   jap_emote = nil
   lib.each {|k, a| jap_emote = a[1] if en_emote == a[0]}
@@ -31,4 +32,4 @@ def get_english_meaning(path, jap_emote)
   en_meaning ? en_meaning : "Sorry, that emoticon was not found"
 end
 
-#puts get_japanese_emoticon(path, "O:)")
+puts get_japanese_emoticon(path, "O:)")
